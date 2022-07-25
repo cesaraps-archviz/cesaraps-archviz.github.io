@@ -1,0 +1,46 @@
+.header{
+    width: 100%;
+    position: fixed;
+    min-height: 90px;
+
+    .header-container{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        min-height: 90px;
+    
+        .header-navigation__item{
+            float: left;
+            margin: 0 10px;
+            
+    
+            .header-item__link{
+                color: #fff;
+                position: relative;
+    
+                &:before{
+                    content: '';
+                    position: absolute;
+                    bottom: -2px;
+                    left: -2px;
+                    width: 0%;
+                    height: 2px;
+                    background-color: #fff;
+                    transition: ease-in-out .2s;
+                }
+    
+                &:hover {
+                    &:before{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .header-logo{
+            width: 200px;
+        }
+    }
+}
