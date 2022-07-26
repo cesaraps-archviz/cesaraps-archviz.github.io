@@ -1,0 +1,15 @@
+.banner-main{
+    position: relative;
+
+    .banner-main__information{
+        display: flex;
+        gap: 10px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+
+        .banner-main__item{
+            color: #fff;
+        }
+    }
+}
