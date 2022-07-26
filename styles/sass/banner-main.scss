@@ -4,12 +4,29 @@
     .banner-main__information{
         display: flex;
         gap: 10px;
+        bottom: 10%;
+        left: 10%;
         position: absolute;
-        bottom: 0;
-        width: 100%;
 
         .banner-main__item{
             color: #fff;
+            padding: 0 10px;
+
+            &.center{
+                border-left: 1px solid #fff;
+                border-right: 1px solid #fff;
+            }
+
+            .item-title{
+                margin-bottom: 10px;
+                font-size: 20px;
+                letter-spacing: 1.5px;
+            }
+
+            .item-info{
+                font-size: 20px;
+                font-weight: 100;
+            }
         }
     }
 }
