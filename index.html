@@ -68,10 +68,35 @@
                         <strong>Email</strong> lorem@lorem.com.br
                     </li>
                 </ul>
-                
+
                 <a href="#" class="download-curriculum">Download CV</a>
             </div>
         </div>
     </section>
 </body>
+
+<script>
+function init() {
+    var menu = document.querySelector('.header'); //caso o scroll deva aparecer o menu
+
+    var lastScrollTop = 0;
+
+    window.addEventListener("scroll", function () { //função usada para identificar qualquer tipo de scroll
+        var st = window.pageYOffset || document.documentElement.scrollTop;
+        if (st > lastScrollTop) {
+            // Usado para página descendo
+            menu.classList.add('menu-background');
+            
+
+        } else {
+            // Usado para página subindo
+
+            menu.classList.remove('menu-background');
+        }
+        lastScrollTop = st <= 0 ? 0 : st; // Para mobile ou scroll negativo
+    }, false);
+}
+
+window.addEventListener('load', init);
+</script>
 </html>
