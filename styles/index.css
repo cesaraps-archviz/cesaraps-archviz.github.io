@@ -109,6 +109,14 @@ input[type=search] {
   margin: auto;
   min-height: 90px;
 }
+@media screen and (max-width: 1025px) {
+  .header .header-container {
+    justify-content: center;
+  }
+  .header .header-container .header-container__navigation {
+    display: none;
+  }
+}
 .header .header-container .header-navigation__item {
   float: left;
   margin: 0 10px;
@@ -143,6 +151,11 @@ input[type=search] {
   bottom: 10%;
   left: 10%;
   position: absolute;
+}
+@media screen and (max-width: 1025px) {
+  .banner-main .banner-main__information {
+    display: none;
+  }
 }
 .banner-main .banner-main__information .banner-main__item {
   color: #fff;
@@ -183,14 +196,28 @@ input[type=search] {
   line-height: 1.6em;
 }
 .who-iam .who-iam__container {
-  width: 80%;
-  margin: auto;
   display: flex;
   gap: 40px;
-  justify-content: center;
+  width: 100%;
 }
-.who-iam .who-iam__infos {
-  width: 45%;
+@media screen and (min-width: 1026px) {
+  .who-iam .who-iam__container {
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .who-iam .who-iam__container {
+    padding: 0 15px;
+    margin-bottom: 55px;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1026px) {
+  .who-iam .who-iam__infos {
+    width: 45%;
+  }
 }
 .who-iam .who-iam__itens {
   display: flex;
@@ -217,9 +244,16 @@ input[type=search] {
   border-bottom: 2px solid #9F9F9F;
 }
 
-.my-services {
-  width: 70%;
-  margin: auto;
+@media screen and (max-width: 1025px) {
+  .my-services {
+    padding: 0 15px;
+  }
+}
+@media screen and (min-width: 1026px) {
+  .my-services {
+    width: 70%;
+    margin: auto;
+  }
 }
 .my-services .title-bg {
   position: absolute;
@@ -238,6 +272,12 @@ input[type=search] {
   text-transform: uppercase;
   font-family: sans-serif;
 }
+@media screen and (max-width: 1025px) {
+  .my-services .title-bg {
+    font-size: 60px;
+    bottom: -5px;
+  }
+}
 .my-services .section-title {
   display: inline-block;
   font-size: 38px;
@@ -255,9 +295,19 @@ input[type=search] {
   color: #fff;
   margin-top: 55px;
 }
+@media screen and (max-width: 1025px) {
+  .my-services .services-section {
+    flex-direction: column;
+  }
+}
 .my-services .services-section .services-section__item {
   width: 33%;
   padding: 0 10px;
+}
+@media screen and (max-width: 1025px) {
+  .my-services .services-section .services-section__item {
+    width: 100%;
+  }
 }
 .my-services .services-section .single-service {
   background-color: #161616;
@@ -299,23 +349,40 @@ input[type=search] {
   margin-top: 35px;
 }
 
-.my-curriculum {
-  width: 70%;
-  margin: auto;
+@media screen and (max-width: 1025px) {
+  .my-curriculum {
+    padding: 0 15px;
+  }
 }
-.my-curriculum .education {
-  margin-right: 20px;
+@media screen and (min-width: 1026px) {
+  .my-curriculum {
+    width: 70%;
+    margin: auto;
+  }
+  .my-curriculum .education {
+    margin-right: 20px;
+  }
 }
 .my-curriculum .my-curriculum__container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-top: 55px;
+}
+@media screen and (min-width: 1026px) {
+  .my-curriculum .my-curriculum__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
 }
 .my-curriculum .col-title {
   color: #fff;
   font-size: 26px;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 1025px) {
+  .my-curriculum .col-title {
+    margin-top: 20px;
+  }
 }
 .my-curriculum .title-bg {
   position: absolute;
@@ -333,6 +400,12 @@ input[type=search] {
   z-index: -1;
   text-transform: uppercase;
   font-family: sans-serif;
+}
+@media screen and (max-width: 1025px) {
+  .my-curriculum .title-bg {
+    font-size: 60px;
+    bottom: -5px;
+  }
 }
 .my-curriculum .section-title {
   display: inline-block;

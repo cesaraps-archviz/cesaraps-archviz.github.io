@@ -1,6 +1,12 @@
 .my-services{
-    width: 70%;
-    margin: auto;
+    @include device(mobile){
+        padding: 0 15px;
+    }
+
+    @include device(desktop){
+        width: 70%;
+        margin: auto;
+    }
 
     .title-bg{
         position: absolute;
@@ -18,6 +24,11 @@
         z-index: -1;
         text-transform: uppercase;
         font-family: sans-serif;
+
+        @include device(mobile){
+            font-size: 60px;
+            bottom: -5px;
+        }
     }
     
     .section-title {
@@ -38,9 +49,17 @@
         color: #fff;
         margin-top: 55px;
 
+        @include device(mobile){
+            flex-direction: column;
+        }
+
         .services-section__item{
             width: 33%;
             padding: 0 10px;
+
+            @include device(mobile){
+                width: 100%;
+            }
         }
         
         .single-service {
