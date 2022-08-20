@@ -1,0 +1,114 @@
+.my-curriculum{
+    width: 70%;
+    margin: auto;
+
+    .education {
+        margin-right: 20px;
+    }
+
+    .my-curriculum__container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 55px;
+    }
+
+    .col-title {
+        color: #fff;
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    
+    .title-bg{
+        position: absolute;
+        left: -6px;
+        color: transparent;
+        font-size: 110px;
+        font-weight: 900;
+        opacity: .2;
+        line-height: 1;
+        max-width: 100%;
+        white-space: nowrap;
+        -webkit-text-stroke: 1px #ffffff;
+        -webkit-user-select: none;
+        bottom: -30px;
+        z-index: -1;
+        text-transform: uppercase;
+        font-family: sans-serif;
+    }
+    
+    .section-title {
+        display: inline-block;
+        font-size: 38px;
+        font-weight: 700;
+        letter-spacing: -.25px;
+        line-height: 100%;
+        margin-bottom: 0;
+        position: relative;
+        z-index: 9;
+        color: #ffffff;
+    }
+    
+    .resume-items-wrapper {
+        box-shadow: 0 0 20px 0 rgb(0 0 0 / 5%);
+    }
+
+    .resume-item{
+        background-color: #161616;
+        border-left: 2px solid transparent;
+        border-left-color: #098AAB;
+        padding: 32px 48px;
+        position: relative;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid #313131;
+        }
+
+        .item-arrow {
+            left: 0;
+            margin-top: 2px;
+            position: absolute;
+
+            &:before{
+                content: "";
+                display: block;
+                position: absolute;
+                background-color: #098AAB;
+                height: 16px;
+                left: 0;
+                width: 16px;
+            }
+
+            &:after{
+                content: "";
+                display: block;
+                position: absolute;
+                border: 8px solid transparent;
+                border-left-color: #098AAB;
+                left: 16px;
+            }
+        }
+
+        .item-title {
+            line-height: 100%;
+            font-size: 1.25rem;
+            margin-bottom: 9px;
+            color: #fff;
+        }
+
+        .item-details {
+            display: inline-block;
+            margin-bottom: 7px;
+            color: #fff;
+        }
+
+        .item-description {
+            margin-bottom: 0;
+            color: #fff;
+        }
+        
+    }
+    
+
+
+}
